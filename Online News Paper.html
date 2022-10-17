@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Online NewsPaper</title>
+     <style>
+    .item1 { 
+      grid-area: header;
+      background-color: #FDF5DF;
+      color: #5EBEC4;
+     
+    }
+    .item2 { 
+      grid-area: menu;
+      background-color: #FDF5DF;
+      color: #5EBEC4;
+      height: 750px;
+    }
+    .item3 { 
+      grid-area: main;
+      background-color: #FDF5DF; 
+      height: 750px;
+      overflow: auto;
+
+    }
+    .item4 { 
+      grid-area: right;
+      background-color: #FDF5DF; 
+      height: 750px;
+      overflow: auto;
+
+    }
+   .grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #ccc;
+    padding: 10px;
+    }
+
+  .grid-container > div {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 20px;
+  
+    }
+
+    h2 {
+    color: #F92C85;
+    }
+
+    h3 {
+    color: #F92C85;
+    }
+
+    p {
+      padding: 5px;
+    }
+
+    nav {
+      padding: 10px;
+    }     
+    </style>
+    
+</head>
+<body>
+   <div class="grid-container">
+   <div class="item1">
+   <img src="logo.png" alt="Company Logo" style="width:200px;height:200px;">
+   
+   <h1>Team 2 Online NewsPaper</h1>
+   <h2>The truth is out there</h2>
+   </div>
+  <div class="item2">
+<nav>
+    <ul>
+      <li><a href="https://www.weather.com" target="_blank">Weather</a></li>
+      <li><a href="https://www.bleacherreport.com" target="_blank">Sports</a></li>
+      <li><a href="https://www.minnpost.com/dc-memo/" target="_blank">Politics</a></li>
+      <li><a href="https://www.reuters.com/business/" target="_blank">Business</a></li>
+      <li><a href="https://www.eonline.com/" target="_blank">Entertainment</a></li>
+    </ul>
+ </nav>
+</div>
+
+ 
+
+
+<div class="item3">
+
+ <article>
+   <h3>Big News!!</h3>
+   <img src="Donatello.jpg" alt="W3Schools.com" style="width:200px;height:250px;">
+   <p style= "text-align: justify;">Vestibulum quis pretium metus. Nunc ultrices sit amet nisl sed cursus.
+   Ut aliquet risus sit amet nibh malesuada euismod. Quisque non magna eget diam gravida pretium. 
+   Mauris dapibus rutrum arcu non hendrerit. Nulla cursus quis nibh vel sodales. Vivamus posuere finibus eros in feugiat.
+   Aenean eu tempor lacus, vitae tempor justo. In hac habitasse platea dictumst. Maecenas sed hendrerit mauris, eget ullamcorper dui.</p>
+   
+   <p style= "text-align: justify;">Suspendisse nisl ligula, feugiat at efficitur quis, fringilla ut magna. Vivamus elit nisl, consequat sed augue sed, accumsan porttitor enim. Suspendisse ullamcorper aliquet sodales.
+   Nam pretium mollis dui vel cursus. Cras enim massa, dictum at sagittis sed, sodales sed augue.
+   Ut orci urna, interdum ac scelerisque at, varius sit amet nisi. Maecenas tellus neque, gravida sed ipsum volutpat, hendrerit luctus est. 
+   Pellentesque neque ipsum, eleifend quis ultrices a, venenatis at ex. Phasellus ac dui ac odio venenatis tempor.
+   Ut posuere iaculis malesuada. Sed vitae ultricies nisl. In sed justo sit amet quam efficitur semper. Sed dictum magna auctor, pulvinar tortor accumsan, euismod quam. </P>
+  
+   <p style= "text-align: justify;">Donec sed nulla nec erat pharetra gravida. Phasellus nisi eros, sollicitudin sed consequat non, iaculis non felis. Etiam malesuada, dui in blandit rhoncus, 
+   tortor tellus molestie urna, at molestie tortor nisi non risus. Donec quis tellus vel justo vehicula venenatis nec eu nulla. Mauris nisl eros, vestibulum nec aliquam eu,
+   rhoncus at purus. Nulla faucibus mi vel arcu egestas accumsan. Nunc magna elit, mattis sit amet magna vitae, lacinia cursus orci. Duis pharetra consectetur pharetra.
+   Aenean rhoncus ante sit amet neque lobortis, in porttitor dolor malesuada. Fusce posuere ligula eu urna consectetur, sit amet pharetra magna vulputate. Etiam quis auctor magna.
+   Aliquam lobortis vitae felis id tincidunt. Pellentesque laoreet elit ex. Donec aliquet, dui sed fringilla euismod, eros neque molestie lorem, et imperdiet odio ligula quis tellus. 
+   Fusce vestibulum mollis sapien et semper. Nulla varius orci at dapibus vehicula. </p>
+  <footer style= "text-align: right">Written by Donatello Ninja Turtle 28 August, 2022</footer>
+
+ </article>
+</div>
+
+<div class="item4">
+ <article>
+
+   <h3>More Big News!</h3>
+   <img src="Mattis.jpg" alt="W3Schools.com" style="width:200px;height:250px;"> 
+   <p style= "text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat risus turpis. Aenean tortor mauris, pharetra eu tempus at, maximus at magna. Duis pretium non ex nec semper.
+   Vivamus eleifend leo purus, rutrum euismod risus vulputate a. Integer venenatis mauris eget pharetra sagittis. Sed velit nunc, iaculis non neque eu, placerat elementum sapien. 
+   Maecenas feugiat tortor id orci condimentum, in faucibus augue blandit. Donec placerat ac ligula sit amet auctor. 
+   Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vel tempor eros. 
+   Curabitur tincidunt lectus a interdum suscipit. Vivamus a enim id metus volutpat posuere. Sed faucibus libero vitae vulputate porttitor.</p>
+
+   <p style= "text-align: justify;">Nunc ut enim enim. Vestibulum et dignissim neque. Maecenas nulla massa, bibendum in tortor id, imperdiet ultricies lacus. 
+   Aliquam erat volutpat. Curabitur mollis purus augue, sit amet feugiat purus mattis non. Vivamus sed nibh sit amet nibh auctor efficitur. 
+   Integer euismod euismod massa, quis tincidunt enim vulputate ut. Cras fringilla nisi ac lorem porta placerat. Integer sit amet fringilla sapien. 
+   Maecenas dictum erat quam, at lobortis eros porttitor sit amet. Ut quis enim quis quam pretium eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+   Morbi tempor leo eget eros aliquam lacinia sed vitae leo. Aenean viverra mauris eros, at tristique nisl malesuada non.</P>
+   <footer style= "text-align: right">Written by Mad Dog Mattis 30 August, 2022 </footer>
+
+ </article>
+</div>
+</div>
+</body>
+</html>
